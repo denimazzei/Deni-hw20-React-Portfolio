@@ -1,60 +1,38 @@
 export const projects = [
   {
-    title: "React Reserve",
-    subtitle: "MERN Stack",
+    title: "Stick It To Starbucks",
+    subtitle: "Project 1",
+    description:
+      "The goal of this project was to develop an application that will provide results about nearby local coffee shops in a given radius from the user’s location. Upon result selection, app will provide navigational assistance to that location as an alternative to Starbucks in an effort to support the local community.",
+    image: "./group-project-1.png",
+    deployed: "https://denimazzei.github.io/stick-it-to-starbucks-project-1/",
+    github: "https://github.com/denimazzei/stick-it-to-starbucks-project-1",
+  },
+  {
+    title: "Password Generator",
+    subtitle: "Homework",
+    description:
+      "Create javascript code to generate a safe, randomized password for password",
+    image: "./password-generator.png",
+    deployed: "https://denimazzei.github.io/Deni-Password-Generator-hw3/",
+    github: "https://github.com/denimazzei/Deni-Password-Generator-hw3",
+  },
+  {
+    title: "Workday Scheduler",
+    subtitle: "Homework",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-1.gif",
-    link: "https://reactbootcamp.com",
+    image: "./workday-scheduler.png",
+    deployed: "https://denimazzei.github.io/Deni-Workday-Scheduler-hw5/",
+    github: "https://github.com/denimazzei/Deni-Workday-Scheduler-hw5",
   },
   {
-    title: "React Tracks",
-    subtitle: "React and Python",
+    title: "Space EMS",
+    subtitle: "Project 2",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-2.gif",
-    link: "https://reactbootcamp.com",
+      "Can you get the emergency supplies safely across the universe? See if you can clear a path through the astroid field by playing this game made with p5.js, MySQL, and Express.js.",
+    image: "./SpaceEMS.png",
+    deployed: "https://space-ems.herokuapp.com/",
+    github: "https://github.com/denimazzei/Space-EMS",
   },
-  {
-    title: "DevChat",
-    subtitle: "React and Firebase",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-3.gif",
-    link: "https://reactbootcamp.com",
-  },
-  {
-    title: "Epic Todo App",
-    subtitle: "React Hooks",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-4.gif",
-    link: "https://reactbootcamp.com",
-  },
-];
-
-export const testimonials = [
-  {
-    quote:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis? Distinctio laboriosam veritatis recusandae minus. Voluptatum accusantium hic laudantium soluta ea sapiente cupiditate officia maiores itaque.",
-    image: "https://randomuser.me/api/portraits/men/1.jpg",
-    name: "Jesse Hicks",
-    company: "Zoozle",
-  },
-  {
-    quote:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis? Distinctio laboriosam veritatis recusandae minus. Voluptatum accusantium hic laudantium soluta ea sapiente cupiditate officia maiores itaque.",
-    image: "https://randomuser.me/api/portraits/men/94.jpg",
-    name: "Ruben Alvarez",
-    company: "Dooble.io",
-  },
-];
-
-export const skills = [
-  "JavaScript",
-  "React",
-  "Next.js",
-  "Node",
-  "GraphQL",
-  "Material UI",
 ];

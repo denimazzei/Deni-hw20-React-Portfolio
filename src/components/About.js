@@ -13,10 +13,11 @@ export default function About() {
           <p className="mb-8 leading-relaxed">
             Over the years, my experience in marketing, communication, sales,
             project management, and running small start-ups has allowed me to
-            experience front & backend development from a variety of viewpoints
-            from the client-side. Now that I'm becoming a developer myself, I'm
-            excited to put my programming knowledge, skills and expertise from
-            both sides of the coin to work for you to tackle your next project.
+            experience front and backend development from a variety of
+            viewpoints from the client-side. Now that I'm becoming a developer
+            myself, I'm excited to put my programming knowledge, skills and
+            expertise from both sides of the coin to work for you to tackle your
+            next project.
           </p>
           <div className="flex justify-center">
             <a
@@ -37,7 +38,7 @@ export default function About() {
           <img
             className="object-cover object-center rounded"
             alt="hero"
-            src="/assets/coding.svg"
+            src="./profile-image.png"
           />
         </div>
       </div>
