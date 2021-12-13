@@ -20,8 +20,7 @@ export const projects = [
   {
     title: "Workday Scheduler",
     subtitle: "Homework",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+    description: 'A daily work-day scheduler with  hourly task rows using Moment.js'
     image: "./workday-scheduler.png",
     deployed: "https://denimazzei.github.io/Deni-Workday-Scheduler-hw5/",
     github: "https://github.com/denimazzei/Deni-Workday-Scheduler-hw5",
