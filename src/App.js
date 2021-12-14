@@ -1,16 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
-import Navbar from "./components/Navbar/Navbar";
 import Projects from "./components/Portfolio/Projects";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import { Container } from "react-bootstrap";
+
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function App() {
+  const [currentTab, setCurrentTab] = useState("");
+
+  const renderTab = () => {
+    switch (currentTab) {
+      case "about":
+        return <About />;
+      case "projects":
+        return <Projects />;
+      case "contact":
+        return <Contact />;
+      default:
+        return null;
+    }
+  };
   return (
-    <main className="text-gray-400 bg-gray-900 body-font">
-      <Navbar />
-      <About />
-      <Projects />
-      <Contact />
-    </main>
+    <div>
+      <Container fluid className="p-0">
+        <Header
+          currentTab={currentTab}
+          setCurrentTab={setCurrentTab}
+          className="p-0 m-0"
+        ></Header>
+      </Container>
+      <Container fluid>
+        <main>{renderTab()}</main>
+      </Container>
+      <Container fluid>
+        <Footer />
+      </Container>
+    </div>
   );
 }
