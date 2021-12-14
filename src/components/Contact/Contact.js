@@ -1,9 +1,11 @@
 import React from "react";
+import { validateEmail } from "../../utils/helpers";
 
 export default function Contact() {
   const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
   const [message, setMessage] = React.useState("");
+  const [error, setError] = React.useState("");
 
   function encode(data) {
     return Object.keys(data)
@@ -15,6 +17,21 @@ export default function Contact() {
 
   function handleSubmit(e) {
     e.preventDefault();
+    if (!name) {
+      setError("Please enter a valid name.");
+      return;
+    }
+    if (!validateEmail(email) || !email) {
+      setError("Please enter a valid email address");
+      return;
+    }
+    if (!message) {
+      setError("You must include a message");
+      return;
+    }
+    const msg = "Thanks for reaching out, ' + name + '! I'll be in touch soon.";
+    setMessage(msg);
+
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www.form-urlencoded" },
@@ -111,6 +128,11 @@ export default function Contact() {
             Submit
           </button>
         </form>
+        {error && (
+          <div>
+            <p className="error-text">{error}</p>
+          </div>
+        )}
       </div>
     </section>
   );
