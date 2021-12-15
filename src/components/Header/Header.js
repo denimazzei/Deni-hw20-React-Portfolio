@@ -1,28 +1,26 @@
 import React from "react";
-import Navigation from "../Navbar/Navigation";
+import { Link } from "react-router-dom";
 
-export default function Header(props) {
-  const { currentTab, setCurrentTab } = props;
+const Header = () => {
+  const listHeader = ["Home", "About", "Projects", "Contact"];
 
   return (
-    <Container fluid className="p-0">
-      <Row className="p-0">
-        <Col className="text-center p-0" md={12}>
-          <div className="jumbotron-fluid mt-2">
-            <h2 className="display-2 mb-0 pb-0">Deni Mazzei</h2>
-            <p className="lead pt-0 mt-0">Full Stack Developer</p>
-          </div>
-        </Col>
-        <header>
-          <div></div>
-          <div>
-            <Navigation
-              currentTab={currentTab}
-              setCurrentTab={setCurrentTab}
-            ></Navigation>
-          </div>
-        </header>
-      </Row>
-    </Container>
+    <div className="bg-yellow-600 py-4">
+      <div className="container mx-auto">
+        <div className="flex flex-row">
+          {listHeader.map((item) => {
+            return (
+              <Link to={`/${item}`} key={item}>
+                <div className="px-4">
+                  <p className="text-white capitalize">{item}</p>
+                </div>
+              </Link>
+            );
+          })}
+        </div>
+      </div>
+    </div>
   );
-}
+};
+
+export default Header;

@@ -1,9 +1,7 @@
-import React, { useState } from "react";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import Projects from "./components/Portfolio/Projects";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
+import Home from "./components/Home/home";
 
 const routes = [
   {
