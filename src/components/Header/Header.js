@@ -1,6 +1,5 @@
 import React from "react";
-import Navigation from "components/Navbar";
-import { Container, Row, Col } from "react-bootstrap";
+import Navigation from "../Navbar/Navigation";
 
 export default function Header(props) {
   const { currentTab, setCurrentTab } = props;
