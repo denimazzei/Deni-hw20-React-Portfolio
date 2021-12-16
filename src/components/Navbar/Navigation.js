@@ -1,6 +1,6 @@
 import React from "react";
 
-function Navbar() {
+function Navigation() {
   return (
     <nav class="font-sans flex flex-col text-center sm:flex-row sm:text-left sm:justify-between py-4 px-6 bg-white shadow sm:items-baseline w-full">
       <div class="mb-2 sm:mb-0">
@@ -16,22 +16,22 @@ function Navbar() {
           href="/about"
           class="text-lg no-underline text-grey-darkest hover:text-blue-dark ml-2"
         >
-          One
+          About
         </a>
         <a
           href="/projects"
           class="text-lg no-underline text-grey-darkest hover:text-blue-dark ml-2"
         >
-          Two
+          Projects
         </a>
         <a
           href="/contact"
           class="text-lg no-underline text-grey-darkest hover:text-blue-dark ml-2"
         >
-          Three
+          Contact
         </a>
       </div>
     </nav>
   );
 }
-export default Navbar;
+export default Navigation;
