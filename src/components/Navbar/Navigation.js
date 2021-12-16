@@ -1,61 +1,37 @@
 import React from "react";
-import { Container } from "react-bootstrap";
-import { Nav } from "react-bootstrap";
-import Navbar from "react-bootstrap/Navbar";
 
-export default function Navigation(props) {
-  const { currentTab, setCurrentTab } = props;
-
+function Navbar() {
   return (
-    <Container fluid className="p-0">
-      <Navbar
-        collapseOnSelect
-        bg="dark"
-        variant="dark"
-        className="px-2 p-sm-0"
-        id="navbar-collapse-id"
-        expand="lg"
-        fill
-        activekey={currentTab}
-        justified
-      >
-        <Container>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav px-3 px-sm-1 px-md-0" />
-
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav
-              activeKey={currentTab}
-              onSelect={setCurrentTab}
-              className="px-3 px-sm-1 px-md-0"
-            >
-              <Nav.Item>
-                <Nav.Link
-                  onClick={() => setCurrentTab("about")}
-                  eventKey="about"
-                >
-                  About
-                </Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link
-                  onClick={() => setCurrentTab("portfolio")}
-                  eventKey="portfolio"
-                >
-                  Portfolio
-                </Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link
-                  onClick={() => setCurrentTab("contact")}
-                  eventKey="contact"
-                >
-                  Contact
-                </Nav.Link>
-              </Nav.Item>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-    </Container>
+    <nav class="font-sans flex flex-col text-center sm:flex-row sm:text-left sm:justify-between py-4 px-6 bg-white shadow sm:items-baseline w-full">
+      <div class="mb-2 sm:mb-0">
+        <a
+          href="/home"
+          class="text-2xl no-underline text-grey-darkest hover:text-blue-dark"
+        >
+          Home
+        </a>
+      </div>
+      <div>
+        <a
+          href="/about"
+          class="text-lg no-underline text-grey-darkest hover:text-blue-dark ml-2"
+        >
+          One
+        </a>
+        <a
+          href="/projects"
+          class="text-lg no-underline text-grey-darkest hover:text-blue-dark ml-2"
+        >
+          Two
+        </a>
+        <a
+          href="/contact"
+          class="text-lg no-underline text-grey-darkest hover:text-blue-dark ml-2"
+        >
+          Three
+        </a>
+      </div>
+    </nav>
   );
 }
+export default Navbar;
