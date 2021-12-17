@@ -1,37 +1,26 @@
 import React from "react";
 
-function Navigation() {
+export default function Navbar() {
   return (
-    <nav class="font-sans flex flex-col text-center sm:flex-row sm:text-left sm:justify-between py-4 px-6 bg-white shadow sm:items-baseline w-full">
-      <div class="mb-2 sm:mb-0">
-        <a
-          href="/home"
-          class="text-2xl no-underline text-grey-darkest hover:text-blue-dark"
-        >
-          Home
+    <header className="bg-white-800 md:sticky top-0 z-10 font-mono">
+      <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <a className="title-font font-medium text-white mb-4 md:mb-0 font-mono">
+          <a href="/about" className="ml-3 text-xl">
+            <img src="./profile_image.png" alt="" className="" />
+          </a>
         </a>
+        <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
+          <a href="/about" className="mr-5 hover:text-white">
+            About
+          </a>
+          <a href="/projects" className="mr-5 hover:text-white">
+            Projects
+          </a>
+          <a href="/contact" className="mr-5 hover:text-white">
+            Contact
+          </a>
+        </nav>
       </div>
-      <div>
-        <a
-          href="/about"
-          class="text-lg no-underline text-grey-darkest hover:text-blue-dark ml-2"
-        >
-          About
-        </a>
-        <a
-          href="/projects"
-          class="text-lg no-underline text-grey-darkest hover:text-blue-dark ml-2"
-        >
-          Projects
-        </a>
-        <a
-          href="/contact"
-          class="text-lg no-underline text-grey-darkest hover:text-blue-dark ml-2"
-        >
-          Contact
-        </a>
-      </div>
-    </nav>
+    </header>
   );
 }
-export default Navigation;
