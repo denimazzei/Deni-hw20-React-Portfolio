@@ -12,7 +12,7 @@ export default function Footer() {
       <h3>Let's Get Social!</h3>
       <a
         href="https://www.facebook.com/denimazzei/"
-        className="facebook social"
+        className="facebook social "
       >
         <FontAwesomeIcon icon={faFacebook} size="2x" />
       </a>
