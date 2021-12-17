@@ -5,6 +5,7 @@ import About from "./components/About/About";
 import Projects from "./components/Portfolio/Projects";
 import Contact from "./components/Contact/Contact";
 import Home from "./components/Home/home";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -34,6 +35,9 @@ function App() {
       </div>
       <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
         <Home />
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );
