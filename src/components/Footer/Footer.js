@@ -26,7 +26,7 @@ export default function Footer() {
         <FontAwesomeIcon icon={faLinkedin} size="2x" />
       </a>
       <div class="text-center p-6 bg-gray-200">
-        <span>© 2021 Copyright - </span>
+        <span>© 2021 - </span>
         <a class="text-black-600 font-semibold">Deni Mazzei</a>
       </div>
     </div>
