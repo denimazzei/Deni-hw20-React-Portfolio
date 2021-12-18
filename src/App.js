@@ -1,10 +1,12 @@
 import React from "react";
+
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./components/Navbar/Navigation";
-//import About from "./components/About/About";
-//import Projects from "./components/Portfolio/Projects";
-//import Contact from "./components/Contact/Contact";
-import Home from "./components/Home/home";
 import Footer from "./components/Footer/Footer";
+import About from "./components/About/About";
+import Projects from "./components/portfolio/Projects";
+import Contact from "./components/contact/Contact";
+import Home from "./components/Home/home";
 
 function App() {
   return (
@@ -26,7 +28,15 @@ function App() {
         </div>
       </div>
       <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
-        <Home />
+        <Router>
+          <Navbar />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/portfolio" component={Projects} />
+            <Route exact path="/contact" component={Contact} />
+          </Switch>
+        </Router>
       </div>
 
       <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center"></div>
